@@ -1,0 +1,28 @@
+.input-field{
+  outline: none;
+  border: solid;
+  border-radius: 5px;
+  border-width: 0.5px;
+  color: var(--input-field-color);
+  border-color: var(--input-field-color);
+  margin: 5px;
+  padding:8px;
+}
+
+.input-field::placeholder{
+  color: gray;
+}
+
+.input-field:focus{
+  outline: none;
+}
+
+.input-field-invalid{
+  border-color: var(--input-field-invalid-color);
+  color: var(--input-field-invalid-color);
+}
+
+.input-field-success {
+  border-color: var(--input-field-success-color);
+  color: var(--input-field-success-color);
+}

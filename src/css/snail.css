@@ -1,0 +1,20 @@
+@import "./themes/basic.css";
+@import "./options.css";
+@import "./components/accordion.css";
+@import "./components/navbar.css";
+@import "./components/overlay.css";
+@import "./components/offcanvas.css";
+@import "./components/button.css";
+@import "./components/form.css";
+@import "./components/container.css";
+body{
+  background: var(--body-bg);
+  color:var(--body-color);
+}
+
+.main{
+  box-sizing: border-box;
+  margin: 90px 2px;
+  padding: 10px;
+  overflow-x:none;
+}

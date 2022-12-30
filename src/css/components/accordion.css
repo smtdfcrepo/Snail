@@ -1,0 +1,30 @@
+ 
+.accordion {
+  background: var(--accordion-bg);
+  color: var(--accordion-color);
+  margin: 5px;
+}
+
+.accordion>.accordion-header {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 16px;
+  font-size: 15px;
+  text-align: left;
+  background: var(--accordion-header-bg);
+  color: var(--accordion-header-color);
+}
+
+.accordion>.accordion-body {
+  box-shadow: 20px 20px 50px 15px grey;
+  margin: 0px 3px;
+  padding: 16px;
+  display: none;
+  border:solid;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-width:0.5px;
+  background: var(--accordion-body-bg);
+  color: var(--accordion-body-color);
+}

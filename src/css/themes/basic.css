@@ -1,0 +1,57 @@
+* {
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --body-bg: white;
+  --body-color: black;
+
+  --accordion-header-bg: aqua;
+  --accordion-header-color: black;
+  --accordion-body-bg: none;
+  --accordion-body-color: black;
+
+  --navbar-bg: black;
+  --navbar-btn-color: white;
+  --navbar-logo-color: white;
+  --navbar-item-color: white;
+  --navbar-item-hover-color: aqua;
+  --navbar-subitem-color: white;
+  --navbar-subitem-hover-color: aqua;
+
+
+  --offcanvas-bg: white;
+  --offcanvas-color: black;
+  --offcanvas-btn-color: black;
+  --offcanvas-title-color: green;
+  --offcanvas-nav-item-color: black;
+  --offcanvas-nav-item-hover-color: aqua;
+  --offcanvas-nav-subitem-color: black;
+  --offcanvas-nav-subitem-hover-color: aqua;
+
+  --btn-bg: black;
+  --btn-color: white;
+  --btn-outline-basic-bg: aqua;
+  --btn-outline-basic-color: var(--btn-outline-basic-bg);
+  --btn-outline-success-bg: green;
+  --btn-outline-success-color: var(--btn-outline-success-bg);
+  --btn-outline-warning-bg: yellow;
+  --btn-outline-warning-color: var(--btn-outline-warning-bg);
+  --btn-outline-danger-bg: yellow;
+  --btn-outline-danger-color: var(--btn-outline-danger-bg);
+
+  --input-field-color: black;
+  --input-field-invalid-color: red;
+    --input-field-success-color: green;
+}
+
+.navbar-theme-on-top-of-page {
+  --navbar-bg: black;
+  --navbar-btn-color: black;
+  --navbar-logo-color: black;
+  --navbar-item-color: black;
+  --navbar-item-hover-color: aqua;
+  --navbar-subitem-color: black;
+  --navbar-subitem-hover-color: aqua;
+}

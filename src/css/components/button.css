@@ -1,0 +1,60 @@
+.btn {
+  border: solid;
+  border-width: 0.5px;
+  color: var(--btn-color);
+  background: var(--btn-bg);
+  margin: 5px;
+  padding:8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-outline-basic {
+  transition: 0.4s;
+  background: none;
+  color: var(--btn-outline-basic-color);
+  border-color: var(--btn-outline-basic-color);
+  
+}
+
+.btn-outline-basic:hover {
+  
+  color: black;
+  background: var(--btn-outline-basic-bg);
+}
+
+.btn-outline-success {
+  background: none;
+  color: var(--btn-outline-success-color);
+  border-color: var(--btn-outline-success-color);
+  transition: 0.4s;
+}
+
+.btn-outline-success:hover {
+  color: black;
+  background: var(--btn-outline-success-bg);
+}
+
+.btn-outline-warning {
+  background: none;
+  color: var(--btn-outline-warning-color);
+  border-color: var(--btn-outline-warning-color);
+  transition: 0.4s;
+}
+
+.btn-outline-warning:hover {
+  color: black;
+  background: var(--btn-outline-warning-bg);
+}
+
+.btn-outline-danger {
+  background: none;
+  color: var(--btn-outline-danger-color);
+  border-color: var(--btn-outline-danger-color);
+  transition: 0.4s;
+}
+
+.btn-outline-danger:hover {
+  color: black;
+  background: var(--btn-outline-danger-bg);
+}
