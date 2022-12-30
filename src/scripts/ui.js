@@ -120,6 +120,46 @@ export class SnailUINavbar extends SnailUIComponent {
   }
 }
 
+export class SnailUIPopup extends SnailUIComponent {
+  constructor(query) {
+    super()
+    this.popup = select(query)
+    this.header = this.popup.select(".popup-header")
+    this.body = this.popup.select(".popup-body")
+  }
+  getState() {
+    let state = this.popup.style.display
+    if (state == "block") {
+      state = "open"
+    } else {
+      state = "close"
+    }
+    return state
+  }
+  setState(mode) {
+    switch (mode) {
+      case "open":
+        MainOverlayControl.open()
+        this.popup.style.display = "block"
+        break
+      case "close":
+        MainOverlayControl.close()
+        this.popup.style.display = "none"
+        break
+      case "auto":
+        let state = this.getState()
+        if (state == "open") {
+          this.setState("close")
+        } else {
+          this.setState("open")
+        }
+        break
+      default:
+        raiseError("InvalidModeError", `Invalid Mode name "${mode}" !`)
+    }
+  }
+}
+
 export class SnailUIOffcanvas extends SnailUIComponent {
   constructor(query) {
     super()

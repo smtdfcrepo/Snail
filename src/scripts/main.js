@@ -7,7 +7,11 @@ import {
 import {
   SnailUIComponent,
   SnailUIAccordion,
-  SnailUINavbar
+  SnailUINavbar,
+  SnailUIPopup,
+ mainOverlayCounter,
+ mainOverlayElement,
+ MainOverlayControl
 } from "./ui.js"
 import {} from "./binding.js"
 
@@ -21,4 +25,9 @@ export const initComponent = registerComponent
 export const UIComponent = SnailUIComponent
 export const UIAccordion = SnailUIAccordion
 export const UINavbar = SnailUINavbar
+export const MainOverlay = {
+  MainOverlayControl,
+  mainOverlayCounter,
+  mainOverlayElement
+}
 export const $ = window.$

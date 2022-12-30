@@ -1,0 +1,18 @@
+.popup {
+  position: fixed;
+  display: none;
+  width: 90%;
+  min-height: 10%;
+  top: 50;
+  left: 50;
+  background-color: var(--popup-bg);
+  z-index: 2003;
+}
+
+.popup.open {
+  display: block;
+}
+
+.popup.close {
+  display: none;
+}
