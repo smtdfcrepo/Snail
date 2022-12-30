@@ -9,15 +9,15 @@
   ```
   Include snail in your project :
     
-    + **Script**
-    ``` html
-      <script src="../dist/snail.js"></script>
-    ```
+  + **Script**
+  ``` html
+    <script src="../dist/snail.js"></script>
+  ```
     
-    + **Style**
-    ``` html
-      <link rel="stylesheet" href="../dist/main.css">
-    ```
+  + **Style**
+  ``` html
+    <link rel="stylesheet" href="../dist/main.css">
+  ```
   
 ***
 - Use Snail
