@@ -31,4 +31,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: dist 
-        path: public/dist
+        path: ./dist
