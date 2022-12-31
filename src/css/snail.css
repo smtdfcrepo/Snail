@@ -8,6 +8,7 @@
 @import "./components/button.css";
 @import "./components/form.css";
 @import "./components/container.css";
+@import "./components/spinner.css";
 body{
   background: var(--body-bg);
   color:var(--body-color);
