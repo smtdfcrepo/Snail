@@ -9,6 +9,7 @@ import {
   SnailUIAccordion,
   SnailUINavbar,
   SnailUIPopup,
+  SnailUIOffcanvas,
  mainOverlayCounter,
  mainOverlayElement,
  MainOverlayControl
@@ -25,6 +26,7 @@ export const initComponent = registerComponent
 export const UIComponent = SnailUIComponent
 export const UIAccordion = SnailUIAccordion
 export const UINavbar = SnailUINavbar
+export const UIOffcanvas = SnailUIOffcanvas
 export const MainOverlay = {
   MainOverlayControl,
   mainOverlayCounter,
