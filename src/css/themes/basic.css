@@ -43,9 +43,9 @@
 
   --input-field-color: black;
   --input-field-invalid-color: red;
-    --input-field-success-color: green;
-    
-    --popup-bg:white
+  --input-field-success-color: green;
+
+  --popup-bg: white
 }
 
 .navbar-theme-on-top-of-page {

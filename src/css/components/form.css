@@ -26,3 +26,33 @@
   border-color: var(--input-field-success-color);
   color: var(--input-field-success-color);
 }
+
+.form-label{
+  font-size: 20px;
+  padding: 8px;
+}
+
+.form-input{
+  margin:0px;
+}
+
+.form-container{
+  margin: 5px;
+}
+
+.form-description{
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.form-description-invaild{
+  font-size: 13px;
+  margin-left: 5px;
+  color:red;
+}
+
+.form-description-success {
+  font-size: 13px;
+  margin-left: 5px;
+  color: green;
+}

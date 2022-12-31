@@ -9,6 +9,7 @@
 @import "./components/form.css";
 @import "./components/container.css";
 @import "./components/spinner.css";
+@import "./components/card.css";
 body{
   background: var(--body-bg);
   color:var(--body-color);
@@ -16,7 +17,6 @@ body{
 
 .main{
   box-sizing: border-box;
-  margin: 90px 2px;
-  padding: 10px;
+  max-width: 98%;
   overflow-x:none;
 }
