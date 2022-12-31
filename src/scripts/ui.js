@@ -123,9 +123,9 @@ export class SnailUINavbar extends SnailUIComponent {
 export class SnailUIPopup extends SnailUIComponent {
   constructor(query) {
     super()
-    this.popup = select(query)
-    this.header = this.popup.select(".popup-header")
-    this.body = this.popup.select(".popup-body")
+    this.popup = select(query,0,true)
+    this.header = this.popup.select(".popup-header",0,true)
+    this.body = this.popup.select(".popup-body",0,true)
   }
   getState() {
     let state = this.popup.style.display
@@ -214,6 +214,10 @@ export const snail_ui_controller = {
     let offcanvas = new SnailUIOffcanvas(args.offcanvas)
     offcanvas.setState(args.mode)
   },
+    "control-popup": function(target, args) {
+      let popup = new SnailUIPopup(args.popup)
+      popup.setState(args.mode)
+    },
 }
 
 window.addEventListener("click", function(e) {
