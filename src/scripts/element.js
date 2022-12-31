@@ -1,7 +1,5 @@
 import { raiseError, checkType } from "./utils.js"
 
-
-
 function generateElement(element) {
   if (element == null || element == undefined) {
     return null
