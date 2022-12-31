@@ -26,12 +26,12 @@
   
   + **Script**
   ``` html
-    <script src="https:/smtdfcrepo.github.io/snail/dist/snail.js"></script>
+    <script src="https:/smtdfcrepo.github.io/Snail/dist/snail.js"></script>
   ```
 
   + **Style**
   ``` html
-    <link rel="stylesheet" href="https://smtdfcrepo.github.io/dist/main.css">
+    <link rel="stylesheet" href="https://smtdfcrepo.github.io/Snail/dist/main.css">
   ```
  
 *** 
