@@ -1,12 +1,25 @@
+/**
+ * Snail Components 
+ */
 export class SnailComponent extends HTMLElement {
   constructor() {
     super()
     this.data = {}
     this.renderDependent = null
   }
+  
+  /**
+   * Get all state of the component
+   */
   get state() {
     return this.data
   }
+  
+  /**
+   * Set a state for the component 
+   * @param {String} name name of state value
+   * @param {Any} vamue value of state
+   */
   setState(name, value) {
     if (this.renderDependent == null) {
       this.data[name] = value
@@ -20,6 +33,10 @@ export class SnailComponent extends HTMLElement {
       }
     }
   }
+  
+  /**
+   * This function will be called when the component is added to the DOM
+   */
   onMount() {}
   onUnMount() {}
   afterRender() {}
