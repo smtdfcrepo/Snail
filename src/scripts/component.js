@@ -6,6 +6,7 @@ export class SnailComponent extends HTMLElement {
     super()
     this.data = {}
     this.renderDependent = null
+    this.values = {}
   }
   
   /**
