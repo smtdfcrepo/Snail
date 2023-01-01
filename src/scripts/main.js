@@ -5,6 +5,7 @@ import {
   SnailListElement
 } from "./element.js"
 import {
+  jq,
   SnailUIComponent,
   SnailUIAccordion,
   SnailUINavbar,
@@ -32,4 +33,4 @@ export const MainOverlay = {
   mainOverlayCounter,
   mainOverlayElement
 }
-export const $ = window.$
+export const $ = jq

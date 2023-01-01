@@ -1,9 +1,9 @@
 import { SnailElement, createElement ,appendElement} from "./element.js"
 import { select } from "./select.js"
 import { raiseError } from "./utils.js"
-import {$} from "jquery"
+import * as $ from "jquery"
 
-
+export const jq = $
 if ($ == undefined) {
   console.warn("SnailUI won't work without jquery")
 }
