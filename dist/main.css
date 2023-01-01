@@ -4132,6 +4132,22 @@
   display: flex;
   justify-content: center;
 }
+
+.text-center{
+  text-align: center;
+
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-left{
+  text-align: left;
+}
+
+
+
 /*!************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/components/accordion.css ***!
   \************************************************************************************/
@@ -4544,6 +4560,7 @@
   padding:8px 15px;
   border-radius: 5px;
   font-weight: bold;
+
 }
 
 .btn-outline-basic {
@@ -4672,9 +4689,20 @@
   margin: 5px;
 }
 
+
 .image-container>img{
   width: 95%;
   height: 100%;
+}
+body ,html{
+  height: 100%;
+}
+.image-fullpage-container>img{
+  height: 100%;
+  width: 100%;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*!**********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/components/spinner.css ***!
@@ -4745,12 +4773,41 @@
   padding: 16px;
   margin:5px;
 }
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/components/tables.css ***!
+  \*********************************************************************************/
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+.table-col-horizontal-dividers tr ,td {
+  border-bottom: 1px solid #ddd;
+}
+
+.table-col-hover tr:hover {
+  background-color: #A4F3FF;
+}
+
+.table-striped tr:nth-child(even) {background-color: #f2f2f2;}
+.table-responsive{
+  max-width: 95%;
+  overflow-x:auto;
+}
+
+th td{
+  font-weight: bold;
+}
+
 /*!*********************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/snail.css ***!
   \*********************************************************************/
 body{
   background: var(--body-bg);
   color:var(--body-color);
+}
+*{
+  z-index: 10;
 }
 
 .main{

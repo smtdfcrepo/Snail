@@ -10,9 +10,13 @@
 @import "./components/container.css";
 @import "./components/spinner.css";
 @import "./components/card.css";
+@import "./components/tables.css";
 body{
   background: var(--body-bg);
   color:var(--body-color);
+}
+*{
+  z-index: 10;
 }
 
 .main{

@@ -1,0 +1,22 @@
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+.table-col-horizontal-dividers tr ,td {
+  border-bottom: 1px solid #ddd;
+}
+
+.table-col-hover tr:hover {
+  background-color: #A4F3FF;
+}
+
+.table-striped tr:nth-child(even) {background-color: #f2f2f2;}
+.table-responsive{
+  max-width: 95%;
+  overflow-x:auto;
+}
+
+th td{
+  font-weight: bold;
+}
