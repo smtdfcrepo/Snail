@@ -11,16 +11,90 @@
 @import "./components/spinner.css";
 @import "./components/card.css";
 @import "./components/tables.css";
-body{
+
+body {
   background: var(--body-bg);
-  color:var(--body-color);
+  color: var(--body-color);
 }
-*{
+
+* {
   z-index: 10;
 }
 
-.main{
+.main {
   box-sizing: border-box;
   max-width: 98%;
-  overflow-x:none;
+  overflow-x: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--body-color);
+  transition: 0.4s;
+  cursor: none;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 100;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  padding: 10px;
+  height: 30rem;
+}
+
+.footer-text-header {
+  margin: 0px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 200px;
+}
+
+.footer-text-description {
+  margin: 0px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+
+.footer-link-header {
+  margin: 0px;
+  padding: 5px;
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-link-item-row {
+    padding: 5px 15px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .footer-link-item-col {
+    margin:5px 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer-link-item-row {
+    padding: 5px 15px;
+    display: flex;
+    flex-flow: column;
+  }
+  .footer-link-item-col {
+    margin: 5px 15px;
+  }
+}
+
+.footer-copyright{
+  font-size: 20px;
+  text-align: center;
 }
