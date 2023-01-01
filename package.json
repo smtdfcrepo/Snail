@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run build-doc && webpack --config build_script.webpack.config.js && webpack --config build_style.webpack.config.js && node src/scripts/server.js",
-    "build-doc":"jsdoc -r .",
+    "build-doc":"jsdoc -c ./jsdoc.config.json ",
     "build-script": "webpack --config webpack.config.js",
     "build-all": "webpack --config build_script.webpack.config.js && webpack --config build_style.webpack.config.js"
   },
