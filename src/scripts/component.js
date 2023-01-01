@@ -4,7 +4,7 @@ export class SnailComponent extends HTMLElement {
     this.data = {}
     this.renderDependent = null
   }
-  getState() {
+  get state() {
     return this.data
   }
   setState(name, value) {
@@ -29,6 +29,10 @@ export class SnailComponent extends HTMLElement {
       html = ''
     this.innerHTML = html
 
+  }
+  handle(){
+    return {
+    }
   }
   connectedCallback() {
     this.onMount()
