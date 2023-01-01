@@ -61,5 +61,5 @@ window.addEventListener("input", function(e) {
 })
 
 function deleteModel(name){
-  delete window.snail_model[name]
+  delete window.snail_model[name] 
 }
