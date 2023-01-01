@@ -125,6 +125,12 @@ export class SnailElement {
   get classList(){
     return this.dom.classList
   }
+  set id(ID){
+    this.dom.id = ID
+  }
+  get id(){
+    return this.dom.id
+  }
 }
 
 export function createElement(name){
