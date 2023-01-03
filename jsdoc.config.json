@@ -1,4 +1,9 @@
 {
+  "templates": {
+        "default": {
+            "outputSourceFiles": false
+        }
+    },
   "source": {
     "includePattern": ".+\\.js(doc|x)?$", 
     "include": ["./src/scripts"], 

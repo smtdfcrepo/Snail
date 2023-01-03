@@ -1,3 +1,4 @@
+import {raiseError} from "./utils.js"
 /**
  * Snail Components 
  */
@@ -62,6 +63,28 @@ export class SnailComponent extends HTMLElement {
   }
 }
 
+export class SnailExprComponent extends SnailComponent{
+  constructor(){
+    super()
+    this.renderDependent = []
+    this.setState("expr",this.textContent)
+  }
+  onMount(){
+    try{
+    this.setState("res",eval(this.state.expr))
+    }catch(e){
+      raiseError("RenderContentError","Expression has error :\n"+e.stack)
+      this.setState("res",e.stack)
+    }
+    this.renderDependent = null
+  }
+  render(){
+    return this.state.res
+  }
+}
+
 export function registerComponent(name, component) {
   window.customElements.define(name, component)
 }
+
+registerComponent("s-expr",SnailExprComponent)

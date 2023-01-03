@@ -46,7 +46,7 @@ a:hover {
   padding: 1rem;
   background-color: #efefef;
   padding: 10px;
-  height: 30rem;
+ min-height: 30rem;
 }
 
 .footer-text-header {

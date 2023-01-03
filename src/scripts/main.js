@@ -1,4 +1,8 @@
-import { SnailComponent, registerComponent } from "./component.js"
+import {
+  SnailComponent, 
+  SnailExprComponent,
+  registerComponent
+} from "./component.js"
 import {
   SnailElement,
   SnailListAttr,
@@ -23,6 +27,7 @@ export const Element = SnailElement
 export const ListAttr = SnailListAttr
 export const ListElement = SnailListElement
 export const Component = SnailComponent
+export const ExprComponent = SnailExprComponent
 export const initComponent = registerComponent
 export const UIComponent = SnailUIComponent
 export const UIAccordion = SnailUIAccordion
