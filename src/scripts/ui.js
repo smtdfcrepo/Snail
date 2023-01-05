@@ -1,8 +1,8 @@
 import { SnailElement, createElement, appendElement } from "./element.js"
 import { select } from "./select.js"
 import { raiseError } from "./utils.js"
-import  "../../test/jquery-3.6.3.min.js"
-let $ = window.$
+import * as $ from "jquery"
+
 //import * as $ from "jquery"
 export const jq = $
 if ($ == undefined) {
