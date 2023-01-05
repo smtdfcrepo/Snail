@@ -131,6 +131,9 @@ export class SnailElement {
   get id(){
     return this.dom.id
   }
+  on(event,callback){
+    this.dom.addEventListener(event,callback)
+  }
 }
 
 export function createElement(name){

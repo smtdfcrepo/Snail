@@ -61,6 +61,10 @@ export class SnailComponent extends HTMLElement {
   disconnectedCallback() {
     this.onUnMount()
   }
+  emptyContent(){
+    this.innerHTML = ""
+    this.textContent = ""
+  }
 }
 
 export class SnailExprComponent extends SnailComponent{
@@ -68,13 +72,13 @@ export class SnailExprComponent extends SnailComponent{
     super()
     this.renderDependent = []
     this.setState("expr",this.textContent)
+    this.emptyContent()
   }
   onMount(){
     try{
     this.setState("res",eval(this.state.expr))
     }catch(e){
       raiseError("RenderContentError","Expression has error :\n"+e.stack)
-      this.setState("res",e.stack)
     }
     this.renderDependent = null
   }
