@@ -132,7 +132,7 @@ export class SnailElement {
     return this.dom.id
   }
   on(event,callback){
-    this.dom.addEventListener(event,callback)
+    this.dom.addEventListener(event,callback) 
   }
 }
 
